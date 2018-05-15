@@ -1,4 +1,4 @@
-<footer class="mt-5 bg-light">
+<footer class="mt-5 bg-dark">
 
   <div class="container-responsive">
 
@@ -9,8 +9,14 @@
     <?php endif; ?>
 
     <div class="row pt-3">
-      <div class="col">
-        <p class="text-center">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a></p>
+	  <div class="col">
+        <p class="text-center"><a href="<?php echo home_url('/'); ?>">Contact</a></p>
+      </div>
+	  <div class="col">
+        <p class="text-center"><a href="<?php echo home_url('/'); ?>">Code of Conduct</a></p>
+      </div>
+	  <div class="col">
+        <p class="text-center"><a href="<?php echo home_url('/'); ?>">Privacy Policy</a></p>
       </div>
     </div>
 

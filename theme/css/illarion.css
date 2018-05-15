@@ -2,41 +2,26 @@
  * illarion CSS
  */
  
- 
-/* fonts */
-@font-face {
-  font-family: BlackChancery;
-  src: url(wp-content/themes/illarion/theme/fonts/BLKCHCRY.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Ubuntu;
-  src: url(wp-content/themes/illarion/theme/fonts/Ubuntu-Regular.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Ubuntu;
-  src: url(wp-content/themes/illarion/theme/fonts/Ubuntu-Bold.ttf);
-  font-weight: normal;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: Ubuntu;
-  src: url(wp-content/themes/illarion/theme/fonts/Ubuntu-Italic.ttf);
-  font-weight: normal;
-  font-style: italic;
-}
 /* main */
+
+.no-padding {
+	padding: 0;
+}
+
+body {
+	background-image: url("../images/background.jpg");
+	background-position-x: 0px;
+	background-position-y: 0px;
+	background-repeat-x: repeat;
+	background-repeat-y: no-repeat;
+	background-attachment: fixed;
+	background-color: #000;
+}
 
 .site-header-image {
 	display: block;
 	margin: auto;
-}
+}	
 
 .wp-caption {}
 .wp-caption-text {}
@@ -61,6 +46,25 @@
 
 .navbar-collapse {
 	flex-grow: 0;
+	font-size: 25px;
+}
+
+.dropdown-item {
+	font-size: 25px;
+}
+
+.nav-link.dropdown-toggle::after {
+	content: none;
+}
+
+.navbar-brand {
+	font-size: 40px;
+}
+
+.navbar {
+	font-family: "cabazon", serif;
+	font-style: normal;
+	font-weight: 400;
 }
 
 /* Max img widths */

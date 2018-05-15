@@ -10,12 +10,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  @import url("https://use.typekit.net/tdi0uwr.css");
+</style>
   <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-dark navbar-default sticky-top bg-dark">
   <div class="container-responsive">
 
     <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
