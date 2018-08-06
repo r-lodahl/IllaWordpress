@@ -9,20 +9,20 @@ Template Name: Landing Page
 
 <div class="container-responsive mt-5 mb-5">
 <div class="row">
-	<div class="col-1"></div>
-	<div class="col-8 text-center">
-		<img src='<?php echo IMAGEPATH ?>/theme/images/logo.png'/>
+	<div class="col-2"></div>
+	<div class="col-8 text-left">
+		<img class="pl-5" src='<?php echo IMAGEPATH ?>/theme/images/logo.png'/>
 	</div>
 </div>
 <div class="row">
-<div class="col-4"></div>
-<div class="col-2"><button type="button" class="btn btn-primary w-100">Download</button></div>
-<div class="col-2"><button type="button" class="btn btn-primary w-100">Register</button></div>
-<div class="col-4"></div>
+<div class="col-3"></div>
+<div class="col-3"><button type="button" class="btn btn-illarion-top w-100 text-primary font-weight-bold">Download</button></div>
+<div class="col-3"><button type="button" class="btn btn-illarion-top w-100 text-primary font-weight-bold">Register</button></div>
+<div class="col-3"></div>
 </div>
 </div>
 
-<div class="row">
+<div class="row row-border no-gutters">
 	<div class="col-3 no-padding">
 		<img class="img-responsive" src='<?php echo IMAGEPATH ?>/theme/images/1.jpg'/>
 	</div>

@@ -4,8 +4,33 @@
  
 /* main */
 
+.text-primary {
+	color: #ddc687!important;
+}
+
+
+.btn-illarion-top,
+.btn-illarion-top:visited,
+.btn-illarion-top:focus {
+	background: transparent url("../images/head_button.png") scroll no-repeat;
+	background-position: center center;
+}
+
+.btn-illarion-top:hover,
+.btn-illarion-top:active {
+	background: transparent url("../images/head_button_hover.png") scroll no-repeat;
+	background-position: center center;
+}
+
+
 .no-padding {
 	padding: 0;
+}
+
+.row-border {
+	border: solid transparent;
+	border-width: 3px 0 3px;
+	border-image: 3 repeat url("../images/bar.jpg");
 }
 
 body {
