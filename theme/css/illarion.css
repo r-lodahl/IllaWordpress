@@ -4,10 +4,19 @@
  
 /* main */
 
+.large {
+	font-size: 115%;
+}
+
 .text-primary {
 	color: #ddc687!important;
 }
 
+.paperback {
+	background: transparent url("../images/paper_big.jpg") scroll no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
 
 .btn-illarion-top,
 .btn-illarion-top:visited,
