@@ -4,6 +4,18 @@
  
 /* main */
 
+.text-illarion {
+	color: #ffe6a2;
+}
+
+a {
+	color: #ddc687;
+}
+
+a:hover {
+	color: #fff;
+}
+
 .large {
 	font-size: 115%;
 }
@@ -16,6 +28,16 @@
 	background: transparent url("../images/paper_big.jpg") scroll no-repeat;
 	background-position: center center;
 	background-size: cover;
+}
+
+.paperback-small {
+	background: transparent url("../images/paper_small.jpg");
+}
+
+.carousel-inner .carousel-item {
+	transition: -webkit-transform 2s ease;
+	transition: transform 2s ease;
+	transition: transform 2s ease, -webkit-transform 2s ease;
 }
 
 .btn-illarion-top,
@@ -34,6 +56,18 @@
 
 .no-padding {
 	padding: 0;
+}
+
+.row-border-bottom {
+	border: solid transparent;
+	border-width: 0 0 3px;
+	border-image: 3 repeat url("../images/bar.jpg");
+}
+
+.row-border-top {
+	border: solid transparent;
+	border-width: 3px 0 0;
+	border-image: 3 repeat url("../images/bar.jpg");
 }
 
 .row-border {

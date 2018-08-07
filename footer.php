@@ -1,9 +1,9 @@
-<footer class="mt-5 bg-dark">
+<footer class="mt-5 row-border-top paperback-small no-padding">
 
   <div class="container-responsive">
 
     <?php if(is_active_sidebar('footer-widget-area')): ?>
-    <div class="row border-bottom pt-5 pb-4" id="footer" role="navigation">
+    <div class="row border-bottom" id="footer" role="navigation">
       <?php dynamic_sidebar('footer-widget-area'); ?>
     </div>
     <?php endif; ?>
