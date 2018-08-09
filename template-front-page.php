@@ -25,7 +25,7 @@ Template Name: Landing Page
 <div class="row row-border no-gutters">
 	<div class="col-12 paperback-small">
 		<div id="imageCarousel" class="carousel slide" data-interval="5000" data-ride="carousel" data-pause="hover" data-wrap="true">
-			<ol class="carousel-indicators d-none d-md-block">
+			<ol class="carousel-indicators d-none d-md-flex">
 				<li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="#imageCarousel" data-slide-to="1"></li>
 				<li data-target="#imageCarousel" data-slide-to="2"></li>

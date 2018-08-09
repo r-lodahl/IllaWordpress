@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: Blog Overview Page
+Template Name: Blank Page
 */
 ?>
 
@@ -11,11 +11,9 @@ Template Name: Blog Overview Page
 
     <div class="col-sm">
       <div id="content" role="main">
-        <?php get_template_part('loops/index-loop'); ?>
+        <?php get_template_part('loops/page-content'); ?>
       </div><!-- /#content -->
     </div>
-
-    <?php get_sidebar(); ?>
 
   </div><!-- /.row -->
 </div><!-- /.container-responsive -->

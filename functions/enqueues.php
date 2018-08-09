@@ -28,6 +28,10 @@ if ( ! function_exists('illarion_enqueues') ) {
 		wp_register_script('jquery-3.3.1', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, '3.3.1', true);
 		wp_enqueue_script('jquery-3.3.1');
 
+//		wp_enqueue_script('jquery-ui-core');
+//		wp_enqueue_script('jquery-ui-menu');
+//		wp_enqueue_script('jquery-ui-autocomplete');
+
 		wp_register_script('popper',  'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js', false, '1.14.0', true);
 		wp_enqueue_script('popper');
 
