@@ -4,6 +4,26 @@
  
 /* main */
 
+.col.menu-item {
+	text-align: center;
+}
+
+.home {
+	background: #000;
+}
+
+#imageCarousel .slick-list .slick-track .slick-slide img {
+	display: inline;
+}
+
+#imageCarousel.slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+
+#imageCarousel .slick-dots {
+	bottom: 25px;
+}
+
 @media (min-width: 420px) and (max-width: 767px) {
 	.text-sm-center-only {
 		text-align: center!important;
@@ -30,6 +50,9 @@
 @media screen and (min-width: 768px) {
 	.slick-track {
 		padding-bottom: 3rem;
+		background: linear-gradient(to bottom, black 0%, black 100%) no-repeat;
+		background-size: 100% 50%;
+		background-position: bottom;	
 	}
 
 	.slick-active {
@@ -43,16 +66,15 @@
 	}
 }
 
-.home {
+.frontpage-background {
 	background-image: url("../images/frontback_high.jpg");
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-size: contain;
-	background-position-y: 63px;
+	background-size: cover;
 }
 
 @media (min-aspect-ratio: 4/3) {
-	.home {
+	.frontpage-background {
 		background-image: url("../images/frontback.jpg");
 	}	
 }

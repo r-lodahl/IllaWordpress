@@ -7,7 +7,8 @@ Template Name: Landing Page
 <?php get_header(); ?>
 <?php define("IMAGEPATH", get_template_directory_uri()); ?>
 
-<div class="container-responsive mt-5 mb-sm-5 frontpage-background">
+<div class="frontpage-background">
+<div class="container-responsive mb-sm-5">
 <div class="row py-md-5">
 	<div class="col-xs-1 col-md-2"></div>
 	<div class="col-xs-10 col-md-8 text-center">
@@ -51,15 +52,16 @@ Template Name: Landing Page
 		</div>
 	</div>
 </div>
+</div>
 
 <div class="container-responsive mb-5">
 
-<div class="row text-illarion">
+<div class="row mt-md-5 mt-4 text-illarion">
 	<div class="col-xs-12 col-md-8">
-	<div class="mx-2 my-md-5">
+	<div class="mx-2 my-md-5 text-justify text-md-left">
 	<h2>About Illarion</h2>
-	<p>Illarion is a Massively Multiplayer Online Role Playing Game (MMORPG) created by voluntary developers. It is opensource and totally free. Illarion is available for over a decade offering a classical and hardcore gaming experience alongside with an isometric gameplay.</p>
-	<p>Illarions design focuses on true role playing and interaction with other players. You wont be guided through the world or be locked inside of fixed class designs. Instead Illarion encourages the player to forge his own destiny and goals. The game features a skill-based leveling system, allowing the player to compell his own unique gaming experience.</p>
+	<p>Illarion is a free Online Role Playing Game created by voluntary developers. It is opensource and totally free. Illarion is available for over a decade offering a classical and hardcore gaming experience alongside with an isometric gameplay. The ongoing development of the game ensures new content and the usage of current technologies.</p>
+	<p>The main design principle of Illarion is its focus on true role playing and the interaction with other players.  You wont be guided through the world or be locked inside of fixed class designs as it is done in most current MMORPGs. Instead Illarion encourages the player to forge his own destiny and goals. To make this possible, the game features a skill-based leveling system, allowing the player to compell his own unique gaming experience. Plenty of skills are offered only restricted by your own ability to learn them.</p>
 	</div>
 	</div>
 	<div class="col-md-4 text-right d-none d-md-block">

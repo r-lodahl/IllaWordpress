@@ -1,25 +1,16 @@
 <footer class="mt-5 row-border-top paperback-small no-padding">
 
   <div class="container-responsive">
-
-    <?php if(is_active_sidebar('footer-widget-area')): ?>
-    <div class="row border-bottom" id="footer" role="navigation">
-      <?php dynamic_sidebar('footer-widget-area'); ?>
-    </div>
-    <?php endif; ?>
-
-    <div class="row pt-3">
-	  <div class="col">
-        <p class="text-center"><a href="<?php echo home_url('/'); ?>">Contact</a></p>
-      </div>
-	  <div class="col">
-        <p class="text-center"><a href="<?php echo home_url('/'); ?>">Code of Conduct</a></p>
-      </div>
-	  <div class="col">
-        <p class="text-center"><a href="<?php echo home_url('/'); ?>">Privacy Policy</a></p>
-      </div>
-    </div>
-
+      <?php
+        wp_nav_menu( array(
+          'theme_location'  => 'footer-menu',
+          'container'       => 'div',
+	  'container_class' => 'row',
+          'items_wrap'      => '%3$s',
+          'depth'           => 1,
+          'walker'          => new Col_Nav_Walker
+        ) );
+      ?>
   </div>
 
 </footer>

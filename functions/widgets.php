@@ -3,6 +3,31 @@
  * Widgets
  */
 
+class Col_Nav_Walker extends Walker_Nav_Menu
+{
+    function start_el(&$output, $item, $depth, $args)
+    {
+        $classes = empty($item->classes) ? array () : (array) $item->classes;
+        $class_names = join(' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) );
+        !empty ( $class_names ) and $class_names = ' class="col '. esc_attr( $class_names ) . '"';
+        $output .= "<div id='menu-item-$item->ID' $class_names>";
+        $attributes  = '';
+        !empty( $item->attr_title ) and $attributes .= ' title="'  . esc_attr( $item->attr_title ) .'"';
+        !empty( $item->target ) and $attributes .= ' target="' . esc_attr( $item->target     ) .'"';
+        !empty( $item->xfn ) and $attributes .= ' rel="'    . esc_attr( $item->xfn        ) .'"';
+        !empty( $item->url ) and $attributes .= ' href="'   . esc_attr( $item->url        ) .'"';
+        $title = apply_filters( 'the_title', $item->title, $item->ID );
+        $item_output = $args->before
+        . "<a $attributes>"
+        . $args->link_before
+        . $title
+        . '</a></div>'
+        . $args->link_after
+        . $args->after;
+        $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+    }
+}
+
 function illarion_widgets_init() {
 
   /*
@@ -30,7 +55,11 @@ function illarion_widgets_init() {
   ... above the Bootstrap `sm` breakpoint.
    */
 
-  register_sidebar( array(
+  register_nav_menus( array (
+    'footer-menu' => __('Footer Menu')
+  ));
+
+  /*register_sidebar( array(
     'name'            => __( 'Footer', 'illarion' ),
     'id'              => 'footer-widget-area',
     'description'     => __( 'The footer widget area', 'illarion' ),
@@ -38,7 +67,7 @@ function illarion_widgets_init() {
     'after_widget'    => '</div>',
     'before_title'    => '<h2 class="h4">',
     'after_title'     => '</h2>',
-  ) );
+  ) );*/
 
 }
 add_action( 'widgets_init', 'illarion_widgets_init' );

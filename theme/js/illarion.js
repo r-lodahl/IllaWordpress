@@ -33,7 +33,16 @@
 		  centerPadding: '0px',
 		  responsive: [
 		    {
-		      breakpoint: 768,
+		      breakpoint: 999,
+		      settings: {
+                       arrows: false,
+              	       centerMode: true,
+		       slidesToShow: 1,
+		       centerPadding: '250px'
+		      }
+		    },
+		    {
+		      breakpoint: 767,
 		      settings: {
 		        arrows: false,
 		        centerMode: true,
