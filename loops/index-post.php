@@ -9,7 +9,7 @@ Used by index.php, category.php and author.php
 <article class="mb-5" role="article" id="post_<?php the_ID()?>" <?php post_class(); ?> >
   <header>
     <h2>
-      <a href="<?php the_permalink(); ?>">
+      <a class="text-illarion"  href="<?php the_permalink(); ?>">
         <?php the_title()?>
       </a>
     </h2>

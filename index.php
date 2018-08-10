@@ -3,7 +3,7 @@
 <div class="container-responsive mt-5">
   <div class="row">
 
-    <div class="col-sm">
+    <div class="col-sm text-dark paperback-small">
       <div id="content" role="main">
         <?php get_template_part('loops/index-loop'); ?>
       </div><!-- /#content -->

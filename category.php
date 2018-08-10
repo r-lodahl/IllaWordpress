@@ -3,7 +3,7 @@
 <div class="container-responsive mt-5">
   <div class="row">
 
-    <div class="col-sm">
+    <div class="col-sm text-illarion">
       <div id="content" role="main">
         <header class="mb-4 border-bottom">
           <h1>

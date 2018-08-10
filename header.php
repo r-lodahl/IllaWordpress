@@ -18,7 +18,7 @@
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-expand-md navbar-default sticky-top paperback-small row-border-bottom no-padding pl-4 text-dark">
+<nav class="navbar navbar-expand-md navbar-default sticky-top paperback-small row-border-bottom no-padding px-4">
   <div class="container-responsive">
 
     <a class="navbar-brand no-padding" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
