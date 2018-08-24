@@ -4,6 +4,18 @@
  
 /* main */
 
+.text-toggler .fa-toggle-on {
+    margin: 0 0.2em 0 -1.2em;
+}
+
+ul.toggle-list {
+    list-style-type: none;
+}
+
+.toggle-text {
+    display: none;
+}
+
 .col.menu-item {
 	text-align: center;
 }

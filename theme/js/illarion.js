@@ -22,6 +22,12 @@
 
 		$('.pagination .dots').addClass('page-link').parent().addClass('disabled');
 
+		// Toggleable Text
+		$(".text-toggler").click(function() {
+  		    $(this).parent().children(".toggle-text").toggle("blind", {}, 500);
+		    $(this).children(".fa-toggle-on").toggleClass("fa-flip-horizontal");
+		});
+
 		// You can put your own code in here
 		$('.frontcarousel').slick({
 		  centerMode: true,

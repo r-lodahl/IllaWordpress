@@ -31,6 +31,31 @@ class Col_Nav_Walker extends Walker_Nav_Menu
 function illarion_widgets_init() {
 
   /*
+  Frontpage Widgets
+  */
+
+  register_sidebar(array(
+    'name' => 'Frontpage Main Content',
+    'id' => 'frontpage-main',
+    'description' => 'Content for the main text area on the frontpage',
+    'before_widget' => false,
+    'after_widget' => false,
+    'before_title' => false,
+    'after_title' => false
+  ));
+
+  register_sidebar(array(
+    'name' => 'Frontpage Column Content',
+    'id' => 'frontpage-column',
+    'description' => 'Content to be included in the column area of the frontpage',
+    'before_widget' => '<div class="%1$s %2$s col-md">',
+    'after_widget' => '</div>',
+    'before_title' => '<div>',
+    'after_title' => '</div>'
+  ));
+
+
+  /*
   Sidebar (one widget area)
    */
   register_sidebar( array(

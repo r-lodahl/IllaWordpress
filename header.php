@@ -40,6 +40,14 @@
         ) );
       ?>
 
+      <ul id="menu-fixed-navigation" class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li id="menu-item-discord" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-discord">
+      <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://discord.gg/b4rJcrq"><i class="fab fa-discord fa-flip-horizontal"></i></a>
+      </li>
+      <li id="menu-item-patreon" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-patreon">
+      <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.patreon.com/"><i class="fab fa-patreon"></i></a>
+      </li>
+      </ul>
     </div>
 
   </div>
